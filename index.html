@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav>
+          <a href="#">
+            <img src="images/logo.svg" alt="logo do site" />
+          </a>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="carrinhoOpcoes">
+          <a href="#">
+            <img
+              src="images/icon-cart.svg"
+              alt="carrinho"
+              class="carrinhoHeader"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/image-avatar.png"
+              alt="imagem de perfil do usuário"
+              class="perfilUsuario"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <hr />
+
+    <main>
+      <div class="imagens">
+        <div class="imagemProduto">
+          <img src="images/image-product-1.jpg" alt="imagem do produto" />
+        </div>
+        <div class="imagemSeletor">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="imagem do produto"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="imagem do produto"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="imagem do produto"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="imagem do produto"
+          />
+        </div>
+      </div>
+      <div class="conteudo">
+        <div class="descricao">
+          <h2>Sneaker Company</h2>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="preco">
+          <div class="precoDesconto">$125.00 <span>50%</span></div>
+          <div class="precoReal">$250.00</div>
+        </div>
+        <div class="botoes">
+          <div class="inputQtd">
+            <button class="menos">
+              <img src="images/icon-minus.svg" alt="menos" />
+            </button>
+            <input type="number" name="qtd" id="qtd" value="1" />
+            <button class="mais">
+              <img src="images/icon-plus.svg" alt="mais" />
+            </button>
+          </div>
+          <button class="adicionar">Add to cart</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

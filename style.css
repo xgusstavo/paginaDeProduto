@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+:root {
+  --fontPrincipal: "Kumbh Sans";
+  --corPrimaria: hsl(26, 100%, 55%);
+  --corSecundaria: hsl(25, 100%, 94%);
+  --corNavegacao: hsl(223, 64%, 98%);
+  --corNavegacaoHover: hsl(220, 14%, 75%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontPrincipal), sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 150px;
+  padding: 0 40px;
+}
+
+/* Mexendo no Header do site */
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav,
+nav ul,
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  width: 80%;
+  margin: 25px auto;
+}
+
+header nav {
+  gap: 50px;
+}
+
+.menu {
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--corLinks);
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--corNavegacaoHover);
+}
+
+.carrinhoOpcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.carrinhoOpcoes .carrinhoHeader {
+  width: 25px;
+  height: fit-content;
+}
+
+.carrinhoOpcoes .perfilUsuario {
+  width: 60px;
+  height: fit-content;
+}
+
+/* Mexendo nas imagens do produto */
+
+.imagens img {
+  border-radius: 20px;
+}
+
+.imagemProduto img {
+  width: 400px;
+}
+
+.imagemSeletor img {
+  width: 80px;
+  margin: 20px 8px;
+}
+
+/* Mexendo no conteudo do produto */
+
+.conteudo {
+  max-width: 600px;
+}
+
+.conteudo h2 {
+  color: var(--corPrimaria);
+}
+
+.precoDesconto {
+  font-weight: 700;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.precoDesconto span {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: var(--corPrimaria);
+  background-color: var(--corSecundaria);
+}
+
+/* Mexendo com os botões de compra e quantidade */
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.inputQtd button,
+.inputQtd input {
+  height: 45px;
+  width: 45px;
+  border: none;
+  background-color: var(--corSecundaria);
+}
+
+.menos {
+  border-radius: 10px 0 0 10px;
+  margin: 0 -4px 0 0;
+}
+
+.mais {
+  border-radius: 0 10px 10px 0;
+  margin: 0 0 0 -4px;
+}
+
+.menos,
+.mais,
+.adicionar {
+  cursor: pointer;
+}
+
+#qtd {
+  text-align: center;
+  font-weight: 700;
+}
+
+.adicionar {
+  background-color: var(--corPrimaria);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.adicionar:hover {
+  background-color: var(--corSecundaria);
+  color: black;
+}
+
+#qtd:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
